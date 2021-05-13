@@ -25,7 +25,7 @@
 |dir_name|char/str|Name of directory with data. Typically subject ID|
 |include_dir|boolean|Controls if directory passes through main|
 |include_sessions|int|Controls if a given recording session file is analyzed|
-|psth_type|char/str|Determins if psth, pca, or ica data is used|
+|psth_type|char/str|Determines if psth, pca, or ica data is used|
 |bin_size|numerical|Temporal resolution of data is binning, or temporal resolution of relative response|
 |window_start|numerical|Start of global event centered around trial onset|
 |window_end|numerical|End of global event centered around trial onset|
