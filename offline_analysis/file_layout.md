@@ -14,3 +14,4 @@ Project_ABC
     |    ├──ABC###
     |    |    └──supported raw file format (plx/pl2, rhs/rhd, etc)
 ```
+Note that `conf_mainFn.csv`, `mainFn` is a place holder for the main that you intend to run. For example, if you intend to run the `recfielf_main` function, then that function will require `conf_recfield.csv` whereas the `mnts_main` function requires the `conf_mnts.csv`.

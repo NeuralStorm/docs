@@ -1,6 +1,8 @@
 # recfield_main
 ## Steps in recfield_main
 1. Select project directory with config, labels, and data
+    * conf_recfield.csv
+    * labels_subjID.csv
 2. Format relative response matrix from neural data
 3. Run receptive field analysis  
     * If cluster_analysis is true, run cluster analysis
@@ -15,10 +17,13 @@
     * [Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html): This is used to help speed up plotting the PSTHS. This is not needed if you skip graphing
     * [Scrollsubplot](https://www.mathworks.com/matlabcentral/fileexchange/7730-scrollsubplot): The scrollsubplot is required for plotting the PSTHs. This is not needed if you skip graphing.
 5. [Make a labels file for each subject.](https://github.com/moxon-lab-codebase/docs/blob/main/offline_analysis/labels_file.md)
+    * labels_subjID.csv
 6. Set up config file. See config section below for more details.
+    * conf_recfield.csv
 7. Run `recfield_main` in Matlab's command window and select path to project directory.
 
 ## Config
+    * conf_recfield.csv
 ### Global Variable
 |Variable Name|Type| Description |
 |:-----------:|:--:| :----------:|
@@ -49,12 +54,15 @@
 |threshold_scalar|numerical|Scales standard deviation of baseline psth|
 |consec_bins|numerical|Number of consecutive bins required above threshold for significant response|
 |sig_check (should change to be strings)|Numerical|0: no stat test, 1: paired t-test, 2: paired ks-test. Compares baseline psth and response psth to see if they are significantly different|
-|cell_sig_alpha (should change name)|numerical|Controls alpha for statistical tests|
+|sig_alpha (should change name)|numerical|Controls alpha for statistical tests|
 ### Cluster Analysis
 |Variable Name|Type| Description |
 |:-----------:|:--:| :----------:|
 |cluser_analysis|boolean|True: does cluster analysis False: skips cluster analysis|
 |bin_gap|numerical|consecutive number of bins below threshold needed to differentiate between clustered responses in response window|
+### Graphing PSTH
+|Variable Name|Type| Description |
+|:-----------:|:--:| :----------:|
 |make_psth_graphs|boolean|True: Make psth graphs False: Skips graphing|
 |plot_rf|boolean|True: Plot metrics from recfield analysis False: Skips plotting metrics|
 |sub_cols|int|number of visible columns shown on channel subplot|

@@ -1,6 +1,8 @@
 # shannon_info_main
 ## Steps in shannon_info_main
 1. Select project directory with config, labels, and data
+    * conf_shannon_info.csv
+    * labels_subjID.csv
 2. Directory with relative response picked by config
     * create rr directly if necessary
 3. Calculate Shanon Mutual Information
@@ -10,10 +12,13 @@
 2. Makue sure filenames match [naming convention.](https://github.com/moxon-lab-codebase/docs/blob/main/offline_analysis/filename_convention.md)
 3. Make sure offline codebase is on your Matlab path. [Click here for details on adding dependencies](https://github.com/moxon-lab-codebase/docs/blob/main/matlab_basics/adding_dependencies.md).
 4. [Make a labels file for each subject.](https://github.com/moxon-lab-codebase/docs/blob/main/offline_analysis/labels_file.md)
+    * labels_subjID.csv
 5. Set up config file. See config section below for more details.
+    * conf_shannon_info.csv
 6. Run `shannon_info_main` in Matlab's command window and select path to project directory.
 
 ## Config
+    * conf_shannon_info.csv
 ### Global Variable
 |Variable Name|Type| Description |
 |:-----------:|:--:| :----------:|

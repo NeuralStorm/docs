@@ -1,6 +1,8 @@
 # bootstrap_classifier_main
 ## Steps in bootstrap_classifier_main
 1. Select project directory with config, labels, and data
+    * conf_bootstrap_classifier.csv
+    * labels_subjID.csv
 2. Format relative response matrix from neural data
 3. Run Euclidean distance PSTH classifier
     * If bootstrap_iterations > 0, bootstrap classifier
@@ -12,10 +14,13 @@
 4. Make sure you have these other dependencies as well:
     * [Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html): This is used to help speed up plotting the PSTHS. This is not needed if you skip graphing
 5. [Make a labels file for each subject.](https://github.com/moxon-lab-codebase/docs/blob/main/offline_analysis/labels_file.md)
+    * labels_subjID.csv
 6. Set up config file. See config section below for more details.
+    * conf_bootstrap_classifier.csv
 7. Run `bootstrap_classifier_main` in Matlab's command window and select path to project directory.
 
 ## Config
+    * conf_bootstrap_classifier.csv
 ### Global Variable
 |Variable Name|Type| Description |
 |:-----------:|:--:| :----------:|
