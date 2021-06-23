@@ -9,7 +9,7 @@
 ---
 # Running bootstrap_classifer_main
 1. Make sure data is organized in proper file structure. [See here for more details.](https://github.com/moxon-lab-codebase/docs/blob/main/offline_analysis/file_layout.md)
-2. Makue sure filenames match [naming convention.](https://github.com/moxon-lab-codebase/docs/blob/main/offline_analysis/filename_convention.md)
+2. Make sure filenames match [naming convention.](https://github.com/moxon-lab-codebase/docs/blob/main/offline_analysis/filename_convention.md)
 3. Make sure offline codebase is on your Matlab path. [Click here for details on adding dependencies](https://github.com/moxon-lab-codebase/docs/blob/main/matlab_basics/adding_dependencies.md).
 4. Make sure you have these other dependencies as well:
     * [Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html): This is used to help speed up plotting the PSTHS. This is not needed if you skip graphing
