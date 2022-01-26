@@ -28,7 +28,9 @@ Once they have added the public key to the repo continue
 Navigate to the folder you want to download the code to in explorer  
 Right click and click `Git Bash Here` to open a git bash in that folder
 
-Run `git clone <repo url>`  
+Run `git clone "<repo url>"`  
+e.g. `git clone "https://github.com/moxon-lab-codebase/Behavioral-Control-Programs.git"`  
+or `git clone "git@github.com:moxon-lab-codebase/Behavioral-Control-Programs.git"`  
 If the repository is public repo url will be an https url like `https://github.com/moxon-lab-codebase/docs.git`  
 If the repository is private repo url will be a git url like `git@github.com:moxon-lab-codebase/ docs.git`  
 This will create a folder with the same name as the repo with the code.
