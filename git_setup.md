@@ -49,7 +49,7 @@ If the repository is public repo url will be an https url like `https://github.c
 If the repository is private repo url will be a git url like `git@github.com:moxon-lab-codebase/ docs.git`  
 This will create a folder with the same name as the repo with the code.
 
-# Updating deployed code
+# Pulling new changed from git
 
 Navigate to the repo folder in explorer  
 Right click and click `Git Bash Here` to open a git bash in that folder
