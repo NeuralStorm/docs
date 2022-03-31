@@ -7,6 +7,8 @@ Before going through this setup you should be provided the following information
 * smb username and password
 * if the zerotier network is private, who to contact after joining to be given access
 
+note: running other vpns such as anyconnect at the same time as zerotier can result in one or both not functioning correctly. If you have issues ensure no other VPNs are running.
+
 # Zerotier setup
 
 * note that zerotier 1.8.1 re-designed the gui. Older versions will look different than this guide.
