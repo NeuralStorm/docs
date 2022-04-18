@@ -1,4 +1,18 @@
 
+## Theory
+
+Understanding the theory underlying Git is key to using it properly, and it is vital that you take the time to watch the lecture below on the importance, theory, and praxis of version control with git. This is **required** for all new laboratory members.
+
+**[Lecture 6: Version Control (git) (2020)](https://www.youtube.com/watch?v=2sjqTHE0zok)**
+
+|Timepoint|Description|
+|:-|:-
+|First 30 minutes|Importance of Git, theory, terminology, & basics.
+|31:30|Git add, commit, log, status.
+|57:20|Merge conflicts.
+|1:04:00|Git remote, push, clone.
+|1:20:00|Git bisect, ignore.
+
 # Git installation
 
 Download and install git from https://git-scm.com/downloads
@@ -45,8 +59,8 @@ Right click and click `Git Bash Here` to open a git bash in that folder
 Run `git clone "<repo url>"`  
 e.g. `git clone "https://github.com/moxon-lab-codebase/Behavioral-Control-Programs.git"`  
 or `git clone "git@github.com:moxon-lab-codebase/Behavioral-Control-Programs.git"`  
-If the repository is public repo url will be an https url like `https://github.com/moxon-lab-codebase/docs.git`  
-If the repository is private repo url will be a git url like `git@github.com:moxon-lab-codebase/ docs.git`  
+If you have ssh authentication set up you can use an ssh url like `git@github.com:moxon-lab-codebase/docs.git`  
+If the repository is public you can use an https url like `https://github.com/moxon-lab-codebase/docs.git`  
 This will create a folder with the same name as the repo with the code.
 
 # Pulling new changed from git

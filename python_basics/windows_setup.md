@@ -27,18 +27,3 @@ Run this command to install the requirements specified in requirments.txt
 ```
 pip install -r requirements.txt
 ```
-
-# Virtual Environments
-
-TODO
-
-# Jupyter notebooks
-
-### Initial Setup
-
-Run `pip install jupyterlab` to install jupyter  
-Run `pip --upgrade --upgrade-strategy eager jupyterlab` to update jupyter
-
-### Opening a notebook
-
-Running `python -m jupyter lab` will start a local server and open a browser tab with the jupyter UI
