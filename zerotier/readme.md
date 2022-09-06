@@ -8,6 +8,7 @@ Before going through this setup you should be provided the following information
 * if the zerotier network is private, who to contact after joining to be given access
 
 note: running other vpns such as anyconnect at the same time as zerotier can result in one or both not functioning correctly. If you have issues ensure no other VPNs are running.
+note: on macos the share can be connected to in finder by include the protocol in the url. e.g. `smb:\\192.168.191.202\robbie_temp` once zerotier is set up
 
 # Zerotier setup
 
