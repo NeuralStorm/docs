@@ -1,6 +1,6 @@
 # Python windows installation
 
-To install python, start git bash (this is installed when you install git) pythonand type python, this should open a [microsoft store page](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7) that will allow you to install python.
+To install python, start git bash (this is installed when you install git)and type python, this should open a [microsoft store page](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7) that will allow you to install python.
 
 # Python windows installation (old way)
 
