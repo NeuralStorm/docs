@@ -1,6 +1,6 @@
 # Python windows installation
 
-Open a command window (cmd): either type command in the search box and run the command app, there is a showrtcut key stroke you can find through windows) powershell or git bash and type python, this should open a [microsoft store page](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7) that will allow you to install python.
+To install python, start git bash (this is installed when you install git) pythonand type python, this should open a [microsoft store page](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7) that will allow you to install python.
 
 # Python windows installation (old way)
 
