@@ -7,7 +7,7 @@ Follow the guide for installing [python](../python_basics/windows_setup.md) usin
 
 # Installation of the joystick task
 
-Create a folder for the game, copy `run.sh` into the folder.
+Create a folder for the game, copy [`run.sh`](./run.sh) into the folder.
 
 In git bash run
 ```
