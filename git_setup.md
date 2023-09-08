@@ -13,8 +13,19 @@ Understanding the theory underlying Git is key to using it properly, and it is v
 |1:04:00|Git remote, push, clone.
 |1:20:00|Git bisect, ignore.
 
-# Git installation
+# Git Setup
 
+## Winget Installation
+
+`winget install --exact --id Git.Git`
+
+The editor can be changed with the command `git config --global core.editor "nano"` replacing `nano` with the command to launch the user's editor of choice.  
+Example editor values:  
+`nano` - an acceptably intuitive tui editor  
+`notepad` - windows notepad.exe  
+`code -w` - visual studio code  
+
+## Gui Installation
 Download and install git from https://git-scm.com/downloads
 
 Accept the default settings. You may want to change the text editor git will use if you plan on making commits.
@@ -27,7 +38,7 @@ Note: Github only allows a deploy key to be used on a single repo which complica
 
 If the repository is public you can skip to **after auth** as long as you use https and not ssh. For private repos you should use ssh. Private repos can be accessed using https with your github login but that is not covered in this guide.
 
-# Setting up git for development
+## Setting up git for development
 
 Follow github's guides for  
 [checking if you have an existing ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)  
@@ -36,7 +47,7 @@ Follow github's guides for
 
 proceed to **after auth**
 
-# Setting up git for deployment (windows)
+## Setting up git for deployment (windows)
 
 Open git bash.
 
@@ -51,7 +62,7 @@ Once they have added the public key to the repo continue
 proceed to **after auth**
 
 ---
-# **after auth**
+## **after auth**
 
 Navigate to the folder you want to download the code to in explorer  
 Right click and click `Git Bash Here` to open a git bash in that folder
@@ -63,7 +74,9 @@ If you have ssh authentication set up you can use an ssh url like `git@github.co
 If the repository is public you can use an https url like `https://github.com/moxon-lab-codebase/docs.git`  
 This will create a folder with the same name as the repo with the code.
 
-# Pulling new changed from git
+# Basic Git Usage
+
+## Pulling new changed from git
 
 Navigate to the repo folder in explorer  
 Right click and click `Git Bash Here` to open a git bash in that folder
@@ -71,7 +84,7 @@ Right click and click `Git Bash Here` to open a git bash in that folder
 Run `git pull`  
 If you get an error about modified files you can run `git stash` to remove local modifications then re-run `git pull`
 
-# Switching branches
+## Switching branches
 
 Navigate to the repo folder in explorer  
 Right click and click `Git Bash Here` to open a git bash in that folder
