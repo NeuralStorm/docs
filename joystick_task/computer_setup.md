@@ -10,6 +10,11 @@ Follow the guide for installing [python](../python_basics/windows_setup.md) usin
 Create a folder for the game, copy [`run.sh`](./run.sh) into the folder.  
 Precompiled wheels are from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
+`run.sh` can be downloaded in git bash using
+```
+curl 'https://raw.githubusercontent.com/NeuralStorm/docs/main/joystick_task/run.sh' -o run.sh
+```
+
 In git bash run
 ```
 bash run.sh bootstrap
