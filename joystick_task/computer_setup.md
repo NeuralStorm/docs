@@ -12,10 +12,7 @@ Precompiled wheels are from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
 In git bash run
 ```
-bash run.sh venv
-bash run.sh clone
-bash run.sh install-py311-32
-bash run.sh install
+bash run.sh bootstrap
 ```
 
 # Updating the joystick task

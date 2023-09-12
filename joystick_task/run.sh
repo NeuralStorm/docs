@@ -8,12 +8,29 @@ if [ "${1:-}" == "p" ]; then
     exit
 fi
 
+if [ "${1:-}" == "clean" ]; then
+    rm -r venv 2> /dev/null || true
+    rm -rf Behavioral-Control-Programs 2> /dev/null || true
+    rm *.whl 2> /dev/null || true
+    exit
+fi
+
+if [ "${1:-}" == "bootstrap" ]; then
+    script="bash $0"
+    $script venv
+    $script clone
+    $script install-py311-32
+    $script install
+    exit
+fi
+
 if [ "${1:-}" == "venv" ]; then
     python -m venv venv
     exit
 fi
 if [ "${1:-}" == "clone" ]; then
-    git clone 'git@github.com:NeuralStorm/Behavioral-Control-Programs.git'
+    # git clone 'git@github.com:NeuralStorm/Behavioral-Control-Programs.git'
+    git clone 'https://github.com/NeuralStorm/Behavioral-Control-Programs.git'
     cd 'Behavioral-Control-Programs'
     git checkout ryan
     exit
@@ -46,19 +63,29 @@ if [ "${1:-}" == "install" ]; then
     exit
 fi
 
+cleanup_files=()
+function _cleanup_files {
+    for p in "${cleanup_files[@]}"; do
+        if test -f $p; then
+            rm $p
+        fi
+    done
+}
+trap _cleanup_files EXIT
+trap _cleanup_files SIGINT
 # install compiled libraries for 32-bit python
 if [ "${1:-}" == "install-py311-32" ]; then
     url_base="https://raw.githubusercontent.com/NeuralStorm/docs/main/joystick_task"
     install_wheel () {
         local f="$1"
         if test ! -f "$f"; then
-            curl "$url_base/$f" > "./$f"
+            cleanup_files+=( "./$f" )
+            curl "$url_base/$f" --output "./$f"
         fi
-        
-        pip install "./$f"
+        pip install --quiet "./$f"
     }
     install_wheel SciPy-1.8.1-cp311-cp311-win32.whl
-    pip install --only-binary :all: pandas
+    pip install --quiet --only-binary :all: pandas
     install_wheel statsmodels-0.13.2-cp311-cp311-win32.whl
     
     exit
