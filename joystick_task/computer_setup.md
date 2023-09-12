@@ -8,7 +8,6 @@ Follow the guide for installing [python](../python_basics/windows_setup.md) usin
 # Installation of the joystick task
 
 Create a folder for the game, copy [`run.sh`](./run.sh) into the folder.  
-Precompiled wheels are from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
 `run.sh` can be downloaded in git bash using
 ```
@@ -41,3 +40,8 @@ The output files can be re-generated separately with
 ```
 bash run.sh gen
 ```
+
+# Misc Notes
+
+The precompiled wheels in this folder are from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/).
+These wheels are needed since some transient dependencies aren't packaged for 32-bit python 3.11 on pypi.
