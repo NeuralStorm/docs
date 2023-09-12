@@ -48,7 +48,7 @@ fi
 
 # install compiled libraries for 32-bit python
 if [ "${1:-}" == "install-py311-32" ]; then
-    url_base="https://github.com/NeuralStorm/docs/blob/main/joystick_task"
+    url_base="https://raw.githubusercontent.com/NeuralStorm/docs/main/joystick_task"
     install_wheel () {
         local f="$1"
         if test ! -f "$f"; then
@@ -88,7 +88,7 @@ elif [ "${1:-}" == "test" ]; then
     shift
     args+=( nw noinfo )
     args+=( "$@" )
-    export config_path="//172.29.230.62/monkey_data/photodiode_test/config.csv"
+    export config_path="./config.csv"
 elif [ "$#" != 0 ]; then
     echo unknown command
     exit 2
