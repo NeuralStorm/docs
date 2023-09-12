@@ -7,12 +7,14 @@ Follow the guide for installing [python](../python_basics/windows_setup.md) usin
 
 # Installation of the joystick task
 
-Create a folder for the game, copy [`run.sh`](./run.sh) into the folder.
+Create a folder for the game, copy [`run.sh`](./run.sh) into the folder.  
+Precompiled wheels are from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
 In git bash run
 ```
 bash run.sh venv
 bash run.sh clone
+bash run.sh install-py311-32
 bash run.sh install
 ```
 

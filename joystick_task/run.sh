@@ -46,6 +46,24 @@ if [ "${1:-}" == "install" ]; then
     exit
 fi
 
+# install compiled libraries for 32-bit python
+if [ "${1:-}" == "install-py311-32" ]; then
+    url_base="https://github.com/NeuralStorm/docs/blob/main/joystick_task"
+    install_wheel () {
+        local f="$1"
+        if test ! -f "$f"; then
+            curl "$url_base/$f" > "./$f"
+        fi
+        
+        pip install "./$f"
+    }
+    install_wheel SciPy-1.8.1-cp311-cp311-win32.whl
+    pip install --only-binary :all: pandas
+    install_wheel statsmodels-0.13.2-cp311-cp311-win32.whl
+    
+    exit
+fi
+
 if [ "${1:-}" == "gen" ]; then
     shift
     if [ "$#" == 0 ]; then
