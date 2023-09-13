@@ -18,6 +18,17 @@ In git bash run
 ```
 bash run.sh bootstrap
 ```
+or the steps can be run individually
+```
+# create a python virtual environment at ./venv
+bash run.sh venv
+# clone the git repository and set it to the correct branch
+bash run.sh clone
+# install some wheels that aren't available on pypi for 32-bit python 3.11
+bash run.sh install-py311-32
+# install the rest of the dependencies and the game
+bash run.sh install
+```
 
 # Updating the joystick task
 
